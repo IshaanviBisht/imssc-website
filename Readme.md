@@ -6,11 +6,11 @@ This website serves as a hub for learners to access council updates, events, gal
 ---
 
 ## Features:
-- **Homepage** – Quick access to all section through nav bar.
-- **Events Page** – View details of upcoming and past school events.  
-- **Gallery** – Photos from events held by SC.
-- **Feedback** – Learner feedback form.  
-- **Contact Page** – Easy communication with the council through provided emails. 
+- **Homepage**: Quick access to all section through nav bar.
+- **Events Page**: View details of upcoming and past school events.  
+- **Gallery**: Photos from events held by SC.
+- **Feedback**: Learner feedback form.  
+- **Contact Page**: Easy communication with the council through provided emails. 
 
 ---
 
