@@ -192,33 +192,35 @@ img {
 
 @media (max-width: 768px) {
   /* MOBILE & TABLET */
-    header h1 { font-size: 1.4rem; }
-    header p { font-size: 1rem; }
-    nav { flex-direction: column; }
-    nav a { padding: 10px; text-align: center; }
-    main { padding: 15px 10px; }
-    .council-image img { max-width: 80%; }
-    .gallery-grid { grid-template-columns: 1fr; }
-    .card { padding: 15px; }
-    h2 { font-size: 1.4rem; }
+    header h1 {font-size: 1.4rem;}
+    header p {font-size: 1rem;}
+    nav {flex-direction: column;}
+    nav a {padding: 10px; text-align: center;}
+    main {padding: 15px 10px;}
+    .council-image img {max-width: 80%;}
+    .gallery-grid {grid-template-columns: 1fr;}
+    .card {padding: 15px;}
+    h2 {font-size: 1.4rem;}
 
-  /* FIX GOOGLE FORM ON MOBILE */
     iframe { 
         width: 100%; 
-        height: 1500px; /* Shorter height for mobile */
+        height: 2000px; /* Shorter height for mobile */
     }
 }
 
-/* MAKE CONTAINERS FLEXIBLE */
+
 main, .card, .event-card {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* MAKE IFRAMES RESPONSIVE */
+/* desktop sizing */
 iframe {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
+  width: 640px; /* og width */
+  height: 2393px; /* og height */
+  max-width: 100%; /* prevents overflow on smaller screens */
+    border: none;
+  margin: 0 auto; /* centers the iframe */
+  display: block; /* makes margin auto work */
 }
