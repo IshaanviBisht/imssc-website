@@ -196,3 +196,31 @@ footer {
 .gallery-grid img:hover {
     transform: scale(1.03);
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* MOBILE-FIRST MEDIA QUERIES: 768px = TABLETS, 1024px = DESKTOP */
+
+@media (max-width: 768px) {
+  /* MOBILE & TABLET - ONE BREAKPOINT COVERS ALL */
+    header h1 { font-size: 1.4rem; }
+    header p { font-size: 1rem; }
+    nav { flex-direction: column; }
+    nav a { padding: 10px; text-align: center; }
+    main { padding: 15px 10px; }
+    .council-image img { max-width: 80%; }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .card { padding: 15px; }
+    h2 { font-size: 1.4rem; }
+}
+
+
+/* MAKE CONTAINERS FLEXIBLE */
+main, .card, .event-card {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
