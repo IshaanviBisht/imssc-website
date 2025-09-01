@@ -9,7 +9,7 @@ body {
     background: linear-gradient(to bottom right, #f0f8ff, #e6f2ff);
     color: #333;
     line-height: 1.6;
-      min-height: 100vh; /* full viewport height */
+    min-height: 100vh; /* full viewport height */
     display: flex;
     flex-direction: column; /* stack elements vertically */
 }
@@ -217,10 +217,35 @@ main, .card, .event-card {
 
 /* desktop sizing */
 iframe {
-  width: 640px; /* og width */
-  height: 2393px; /* og height */
-  max-width: 100%; /* prevents overflow on smaller screens */
+    width: 640px; /* og width */
+    height: 2393px; /* og height */
+    max-width: 100%; /* prevents overflow on smaller screens */
+        border: none;
+    margin: 0 auto; /* centers the iframe */
+    display: block; /* makes margin auto work */
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-buttons button {
+    background: #EEAECA;
     border: none;
-  margin: 0 auto; /* centers the iframe */
-  display: block; /* makes margin auto work */
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-buttons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ec9cbf;
 }
