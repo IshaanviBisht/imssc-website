@@ -32,18 +32,81 @@
         <section class="gallery-section">
             <h3 id="friendship">Friendship Day!</h3>
             <div class="gallery-grid">
-                <img src="images/gallery-images/friendship-day/A4.png" alt="Friendship Day Event Picture">
-                <img src="images/gallery-images/friendship-day/I1.png" alt="Friendship Day Event Picture">
-                <img src="images/gallery-images/friendship-day/I2.png" alt="Friendship Day Event Picture">
-                <img src="images/gallery-images/friendship-day/K1.png" alt="Friendship Day Event Picture">
-                <img src="images/gallery-images/friendship-day/K2.png" alt="Friendship Day Event Picture">
+                <img src="images/gallery-images/friendship-day/A4.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/friendship-day/A4.png')">
+                <img src="images/gallery-images/friendship-day/I1.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/friendship-day/I1.png')">
+                <img src="images/gallery-images/friendship-day/I2.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/friendship-day/I2.png')">
+                <img src="images/gallery-images/friendship-day/K1.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/friendship-day/K1.png')">
+                <img src="images/gallery-images/friendship-day/K2.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/friendship-day/K2.png')">
             </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 id="club">First Check Masters Club Meet!</h3>
+            <div class="gallery-grid">
+                <img src="images/gallery-images/club-meet/cm1.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/cm1.png')">
+                <img src="images/gallery-images/club-meet/cm2.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/cm2.png')">
+                <img src="images/gallery-images/club-meet/cm3.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/cm3.png')">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 id="club">First Creative Burst Club Meet!</h3>
+            <div class="gallery-grid">
+                <img src="images/gallery-images/club-meet/cb1.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/cb1.png')">
+                <img src="images/gallery-images/club-meet/cb2.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/cb2.png')">
+                <img src="images/gallery-images/club-meet/cb3.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/cb3.png')">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 id="club">First Shutter Experts' Club Meet!</h3>
+            <div class="gallery-grid">
+                <img src="images/gallery-images/club-meet/se1.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/se1.png')">
+                <img src="images/gallery-images/club-meet/se2.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/se2.png')">
+                <img src="images/gallery-images/club-meet/se3.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/se3.png')">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 id="club">First Music Mash Club Meet!</h3>
+            <div class="gallery-grid">
+                <img src="images/gallery-images/placeholder.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/placeholder.png')">
+                <img src="images/gallery-images/placeholder.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/placeholder.png')">
+                <img src="images/gallery-images/placeholder.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/placeholder.png')">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 id="club">First Novel Minds Club Meet!</h3>
+            <div class="gallery-grid">
+                <img src="images/gallery-images/placeholder.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/placeholder.png')">
+                <img src="images/gallery-images/placeholder.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/placeholder.png')">
+                <img src="images/gallery-images/placeholder.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/placeholder.png')">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3 id="club">First The Coders' Lab Club Meet!</h3>
+            <div class="gallery-grid">
+                <img src="images/gallery-images/club-meet/cl1.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/cl1.png')">
+                <img src="images/gallery-images/club-meet/cl2.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/cl2.png')">
+                <img src="images/gallery-images/club-meet/cl3.png" alt="Friendship Day Event Picture"onclick="openImg('images/gallery-images/club-meet/cl3.png')">
         </section>
     </main>
 
+    <div class="lightbox" id="lightbox" onclick="this.style.display='none'">
+        <img id="lightbox-img" src="" alt="Enlarged image">
+    </div>
 
     <footer>
         <p>Made with 💖 by your Student Council 2025–26</p>
     </footer>
+
+    <script>
+    function openImg(src) {
+        document.getElementById('lightbox').style.display = 'block';
+        document.getElementById('lightbox-img').src = src;
+    }
+    </script>
 </body>
 </html>
